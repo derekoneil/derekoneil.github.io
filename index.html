@@ -9,7 +9,7 @@
   <title>Lab Guides</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link type="text/css" rel="stylesheet" href="https://github.com/derekoneil/derekoneil.github.io/blob/master/JCSPiplelineStackManager/css/solutionEngTemplate.css">
+<link type="text/css" rel="stylesheet" href="https://derekoneil.github.io/JCSPiplelineStackManager/css/solutionEngTemplate.css">
 
 
 </head>
@@ -25,10 +25,10 @@
         return str.replace(new RegExp(find, 'g'), replace);
     }
     
-  var mdContent = '';  $.ajax('https://github.com/derekoneil/derekoneil.github.io/blob/master/JCSPiplelineStackManager/JCSPipelineStackManager100.md')
+  var mdContent = '';  $.ajax('https://derekoneil.github.io/JCSPiplelineStackManager/JCSPipelineStackManager100.md')
     .done(function(msg) {
         mdContent = msg;
-      mdContent = replaceAll(mdContent, /\(images\//g, '(https://github.com/derekoneil/derekoneil.github.io/blob/master/JCSPiplelineStackManager/images/');
+      mdContent = replaceAll(mdContent, /\(images\//g, '(https://derekoneil.github.io/JCSPiplelineStackManager/images/');
       var converter = new showdown.Converter(),
     text      = mdContent,
     html      = converter.makeHtml(text);
